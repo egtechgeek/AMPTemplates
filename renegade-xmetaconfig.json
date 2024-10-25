@@ -1,0 +1,22 @@
+[
+    {
+        "ConfigFile": "renx\\UDKGame\\Config\\DefaultRenegadeX.ini",
+        "ConfigType": "ini",
+        "AutoMap": true
+    },
+    {
+        "ConfigFile": "renx\\UDKGame\\Config\\UDKGame.ini",
+        "ConfigType": "ini",
+        "AutoMap": true
+    },
+    {
+        "ConfigFile": "renx\\UDKGame\\Config\\UDKRenegadeX.ini",
+        "ConfigType": "ini",
+        "AutoMap": true
+    },
+    {
+        "ConfigFile": "renx\\UDKGame\\Config\\UDKXSettings.ini",
+        "ConfigType": "ini",
+        "AutoMap": true
+    }
+]
