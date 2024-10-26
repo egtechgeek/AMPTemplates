@@ -171,8 +171,7 @@
         "EnumValues":{
             "False":"False",
             "True":"True"
-    },
-	
+    },	
 	{	
         "DisplayName":"NetServerMaxTickRate",
         "Category":"Renegade X:stadia_controller",
@@ -261,7 +260,4 @@
         "Placeholder":"https://community-content.totemarts.services/",
         "EnumValues":{}
     },
-
-	
-	
 ]
