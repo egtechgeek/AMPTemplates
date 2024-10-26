@@ -123,8 +123,8 @@
         "InputType":"number",
         "MinValue":"1",
         "ParamFieldName":"Engine.GameInfo.MaxPlayers",
-        "DefaultValue":"32",
-        "Placeholder":"32",
+        "DefaultValue":"40",
+        "Placeholder":"40",
         "Suffix":"players",
         "EnumValues":{}
     }
