@@ -147,7 +147,7 @@
 		"DisplayName":"Time Limit",
         "Category":"Renegade X:stadia_controller",
         "Subcategory":"Server:dns:1",
-        "Description":"Sets a time limit for the map",
+        "Description":"Sets a time limit for the map, 0 for no time limit",
         "Keywords":"time,limit",
         "FieldName":"$TimeLimit",
         "InputType":"number",
@@ -176,7 +176,7 @@
 	{	
         "DisplayName":"NetServerMaxTickRate",
         "Category":"Renegade X:stadia_controller",
-        "Subcategory":"Server:engine:1",
+        "Subcategory":"Advanced:engine:1",
         "Description":"Engine.DemoRecDriver",
         "Keywords":"advanced,engine,setting",
         "FieldName":"$NetServerMaxTickRate",
@@ -191,7 +191,7 @@
 	{	
         "DisplayName":"MaxRewindPoints",
         "Category":"Renegade X:stadia_controller",
-        "Subcategory":"Server:engine:1",
+        "Subcategory":"Advanced:engine:1",
         "Description":"Engine.DemoRecDriver",
         "Keywords":"advanced,engine,setting",
         "FieldName":"$MaxRewindPoints",
@@ -206,7 +206,7 @@
 	{	
         "DisplayName":"ConfiguredInternetSpeed",
         "Category":"Renegade X:stadia_controller",
-        "Subcategory":"Server:engine:1",
+        "Subcategory":"Advanced:engine:1",
         "Description":"Engine.Player",
         "Keywords":"advanced,engine,setting",
         "FieldName":"$ConfiguredInternetSpeed",
@@ -221,7 +221,7 @@
 	{	
         "DisplayName":"MaxClientRate",
         "Category":"Renegade X:stadia_controller",
-        "Subcategory":"Server:engine:1",
+        "Subcategory":"Advanced:engine:1",
         "Description":"IpDrv.TcpNetDriver",
         "Keywords":"advanced,engine,setting",
         "FieldName":"$MaxClientRate",
@@ -236,7 +236,7 @@
 	{	
         "DisplayName":"MaxInternetClientRate",
         "Category":"Renegade X:stadia_controller",
-        "Subcategory":"Server:engine:1",
+        "Subcategory":"Advanced:engine:1",
         "Description":"IpDrv.TcpNetDriver",
         "Keywords":"advanced,engine,setting",
         "FieldName":"$MaxInternetClientRate",
@@ -251,7 +251,7 @@
 	{	
         "DisplayName":"NetServerMaxTickRate",
         "Category":"Renegade X:stadia_controller",
-        "Subcategory":"Server:engine:1",
+        "Subcategory":"Advanced:engine:1",
         "Description":"IpDrv.TcpNetDriver",
         "Keywords":"advanced,engine,setting",
         "FieldName":"$NetServerMaxTickRate",
@@ -266,7 +266,7 @@
 	{	
         "DisplayName":"IpDrv.HTTPDownload",
         "Category":"Renegade X:stadia_controller",
-        "Subcategory":"Server:engine:1",
+        "Subcategory":"Advanced:engine:1",
         "Description":"IpDrv.HTTPDownload",
         "Keywords":"advanced,engine,setting",
         "FieldName":"$IpDrv.HTTPDownload",
