@@ -2,20 +2,24 @@
     {
         "UpdateStageName":"Patcher Download",
         "UpdateSourcePlatform":"Windows",
-        "UpdateSource":"GithubRelease",
-        "UpdateSourceArgs":"pminten/totemarts-patcher-cli",
-        "UpdateSourceData":"tapatcher.exe",
-        "UpdateSourceTarget":"{{$FullRootDir}}",
-        "OverwriteExistingFiles":true
+        "UpdateSource":"FetchURL",
+        "UpdateSourceData":"https://ta-downloads.totemarts.games/ta-patcher-cli/tapatcher.exe",
+		"UnzipUpdateSource": false,
+        "OverwriteExistingFiles": true,
+        "UpdateSourceConditionValue": "true",
+        "DeleteAfterExtract": false,
+        "OneShot": true               
     },
     {
         "UpdateStageName":"Patcher Download",
         "UpdateSourcePlatform":"Linux",
-        "UpdateSource":"GithubRelease",
-        "UpdateSourceArgs":"pminten/totemarts-patcher-cli",
-        "UpdateSourceData":"tapatcher",
-        "UpdateSourceTarget":"{{$FullRootDir}}",
-        "OverwriteExistingFiles":true
+        "UpdateSource":"FetchURL",
+        "UpdateSourceData":"https://downloads.totemarts.services/ta-patcher-cli/tapatcher",
+		"UnzipUpdateSource": false,
+        "OverwriteExistingFiles": true,
+        "UpdateSourceConditionValue": "true",
+        "DeleteAfterExtract": false,
+        "OneShot": true 
     },
     {
         "UpdateStageName":"Xdelta Download",
