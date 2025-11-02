@@ -2,24 +2,20 @@
     {
         "UpdateStageName":"Patcher Download",
         "UpdateSourcePlatform":"Windows",
-        "UpdateSource":"FetchURL",
-        "UpdateSourceData":"https://ta-downloads.totemarts.games/ta-patcher-cli/tapatcher.exe",
-		"UnzipUpdateSource": false,
-        "OverwriteExistingFiles": true,
-        "UpdateSourceConditionValue": "true",
-        "DeleteAfterExtract": false,
-        "OneShot": true               
+        "UpdateSource":"GithubRelease",
+        "UpdateSourceArgs":"pminten/totemarts-patcher-cli",
+        "UpdateSourceData":"tapatcher.exe",
+        "UpdateSourceTarget":"{{$FullRootDir}}",
+        "OverwriteExistingFiles":true
     },
     {
         "UpdateStageName":"Patcher Download",
         "UpdateSourcePlatform":"Linux",
-        "UpdateSource":"FetchURL",
-        "UpdateSourceData":"https://downloads.totemarts.services/ta-patcher-cli/tapatcher",
-		"UnzipUpdateSource": false,
-        "OverwriteExistingFiles": true,
-        "UpdateSourceConditionValue": "true",
-        "DeleteAfterExtract": false,
-        "OneShot": true 
+        "UpdateSource":"GithubRelease",
+        "UpdateSourceArgs":"pminten/totemarts-patcher-cli",
+        "UpdateSourceData":"tapatcher",
+        "UpdateSourceTarget":"{{$FullRootDir}}",
+        "OverwriteExistingFiles":true
     },
     {
         "UpdateStageName":"Xdelta Download",
@@ -38,7 +34,7 @@
         "UpdateSourcePlatform":"Windows",
         "UpdateSource":"Executable",
         "UpdateSourceData":"cmd.exe",
-        "UpdateSourceArgs":"/C cd Firestorm && tapatcher.exe update firestorm .\\server -X .\\xdelta3-3.1.0-x86_64.exe --progress-interval=5 --progress-mode=plain",
+        "UpdateSourceArgs":"/C cd renegadex && tapatcher.exe update renegade_x .\\server -X .\\xdelta3-3.1.0-x86_64.exe --progress-mode=plain",
         "SkipOnFailure":false
     },
     {
@@ -46,11 +42,11 @@
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"Executable",
         "UpdateSourceData":"/bin/bash",
-        "UpdateSourceArgs":"-c \"cd Firestorm && chmod +x tapatcher && ./tapatcher update firestorm ./server --progress-interval=5 --progress-mode=plain\"",
+        "UpdateSourceArgs":"-c \"cd renegadex && chmod +x tapatcher && ./tapatcher update renegade_x ./server --progress-mode=plain\"",
         "SkipOnFailure":false
     },
     {
-        "UpdateStageName":"Initialize Wine",
+        "UpdateStageName":"Initialise Wine",
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"Executable",
         "UpdateSourceData":"/bin/bash",
@@ -60,7 +56,7 @@
         "UpdateStageName":"Winescript Download",
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"FetchURL",
-        "UpdateSourceData":"https://raw.githubusercontent.com/egtechgeek/AMPTemplates/refs/heads/main/firestormwinescript.sh",
+        "UpdateSourceData":"https://raw.githubusercontent.com/egtechgeek/AMPTemplates/refs/heads/main/renegadexwinescript.sh",
         "UpdateSourceArgs":"winescript.sh",
         "UpdateSourceTarget":"{{$FullInstanceDir}}",
         "OverwriteExistingFiles":true
