@@ -20,4 +20,4 @@ Silo trace sockets
 
 The same boot also logs missing Manifest.txt, a missing HUD font, Steam client unavailable, and a failed stats API post. Those do not stop the server either.
 
-On Linux, "X connection to :99 broken" is the virtual display closing, and "Launch.log: file truncated" is the console follower noticing UDK replace its log. The process keeps running after both.
+On Linux, "X connection to :99 broken" is the virtual display closing. The process keeps running after it.

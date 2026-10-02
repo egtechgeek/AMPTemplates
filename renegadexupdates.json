@@ -73,15 +73,6 @@
         "UpdateSourceArgs":"./winescript.sh"
     },
     {
-        "UpdateStageName":"Launch Script Download",
-        "UpdateSourcePlatform":"Linux",
-        "UpdateSource":"FetchURL",
-        "UpdateSourceData":"https://raw.githubusercontent.com/egtechgeek/AMPTemplates/refs/heads/main/renegadexlaunch.sh",
-        "UpdateSourceArgs":"renegadexlaunch.sh",
-        "UpdateSourceTarget":"{{$FullInstanceDir}}",
-        "OverwriteExistingFiles":true
-    },
-    {
         "UpdateStageName":"Start Server",
         "UpdateSourcePlatform":"All",
         "UpdateSource":"StartApplication"
