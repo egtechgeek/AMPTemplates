@@ -1,0 +1,23 @@
+Renegade X dedicated server notes
+
+These lines show up on a normal start of the shipped dedicated server. They come from the 2015 UDK game and the map assets. The server still loads the map, ticks, and accepts players.
+
+PhysX damping
+  DevPhysics: Actor::setLinearDamping / setAngularDamping: Actor must be dynamic!
+  The map calls those functions on static actors. The actors stay static. Gameplay does not use that damping.
+
+Convex cooking
+  WARNING: Cooking Convex For Actor ... Please go and set PreCachedPhysScale
+  UDK builds collision for a mesh scale that was not stored in the asset. The cook finishes. PreCachedPhysScale can only be set in the mesh package.
+
+CPU skinning
+  CPU skinned ... SK_BU_Silo
+  The dedicated server has no GPU, so that skeletal mesh is skinned on the CPU. The server does not render it.
+
+Silo trace sockets
+  BUILDING ERROR: No Trace2d_X sockets exist in Rx_Building_Silo_Internals_0
+  The silo mesh has no radar-trace sockets. The building still spawns.
+
+The same boot also logs missing Manifest.txt, a missing HUD font, Steam client unavailable, and a failed stats API post. Those do not stop the server either.
+
+On Linux, "X connection to :99 broken" is the virtual display closing, and "Launch.log: file truncated" is the console follower noticing UDK replace its log. The process keeps running after both.

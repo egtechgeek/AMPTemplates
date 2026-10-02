@@ -1,9 +1,10 @@
 {
-	"id": "ec280171-c67b-4cf8-923f-dc27fea91ee1",
-	"authors": ["CubeCoders Limited", "AMP Community"],
-	"origin": "https://github.com/CubeCoders/AMPTemplates.git",
-	"url": "https://github.com/CubeCoders/AMPTemplates",
-	"imagefile": "",
-	"prefix": "",
-	"repotype": "AppTemplates"
+    "id": "437e4cb0-07c7-49bb-b34a-a5fcf017b0e7",
+    "authors": [
+        "egtechgeek"
+    ],
+    "origin": "https://github.com/egtechgeek/AMPTemplates.git",
+    "url": "https://github.com/egtechgeek/AMPTemplates",
+    "imagefile": "",
+    "prefix": "egtechgeek"
 }
